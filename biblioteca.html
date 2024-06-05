@@ -10,50 +10,160 @@
                     Gestión de Biblioteca
                 </h1>
             </header>
-            <div>
-                <section>
-                    <input id="input" class="areatxt" type="search" placeholder="Titulo"> <button type="submit">Buscar</button>
-                    <input id="input" class="areatxt" type="search" placeholder="Autor"> <button type="submit">Buscar</button>
-                   <!-- <input id="input" class="areatxt" type="search" placeholder="Tema"> <button type="submit">Buscar</button>
-                    <input id="input" class="areatxt" type="search" placeholder="Ubicación física"> <button type="submit">Buscar</button>-->
-                    <label for="tema">Temas:</label>
-                    <select name="tema" id="tema">
-                        <option value="seleccion">--Seleccione el tema--</option>
-                        <option value="Literatura">Literatura</option>
-                        <option value="Comic">Cómic y fantasia</option>
-                        <option value="Conocimiento">Conocimiento y ciencia</option>
-                        <option value="Cocina">Cocina y gastronomia</option>
-                        <option value="Salud">Bienestar y salud</option>
-                        <option value="Infantil">Infantil y juvenil</option>
-                    </select>
-                    <button type="submit">Buscar</button>
-
-                    <label for="ubi">Ubicación Física</label>
-                    <select name="ubicacion" id="ubi">
-                        <option value="seleccion">--Seleccione ubicación--</option>
-                        <option value="A">A: 1 - 30</option>
-                        <option value="B">B: 31 - 60</option>
-                        <option value="C">C: 61 - 90</option>
-                    </select>
-                    <button type="submit">Buscar</button>
-                </section>
-
-                <div>
-                    <div class="medium-12 small-12 end columns">
-                        <img width="270px" height="180px" alt="Animación" title="Animación de imagen"
-                        src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fco.pinterest.com%2Fpin%2F529735974917358623%2F&psig=AOvVaw1odG8C5sgGAZTyF8HhnrMX&ust=1717633384154000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMizu46Zw4YDFQAAAAAdAAAAABAE">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+            <main>
+                <section id="search-section">
+                    <h2>Buscar Libros</h2>
+                    <form id="search-form">
+                        <input id="title-search" class="areatxt" type="search" placeholder="Título"> 
+                        <button type="submit">Buscar</button>
         
-            ISBN
-            Fecha edición
-            Número de páginas
-            Cantidad de ejemplares
-Cantidad de ejemplares disponibles.
-Resumen
-Tipo de medio del ejemplar (físico, electrónico)
+                        <input id="author-search" class="areatxt" type="search" placeholder="Autor"> 
+                        <button type="submit">Buscar</button>
+        
+                        <label for="tema">Temas:</label>
+                        <select name="tema" id="tema">
+                            <option value="seleccion">--Seleccione el tema--</option>
+                            <option value="Literatura">Literatura</option>
+                            <option value="Comic">Cómic y fantasía</option>
+                            <option value="Conocimiento">Conocimiento y ciencia</option>
+                            <option value="Cocina">Cocina y gastronomía</option>
+                            <option value="Salud">Bienestar y salud</option>
+                            <option value="Infantil">Infantil y juvenil</option>
+                        </select>
+                        <button type="submit">Buscar</button>
+        
+                        <label for="ubi">Ubicación Física:</label>
+                        <select name="ubicacion" id="ubi">
+                            <option value="seleccion">--Seleccione ubicación--</option>
+                            <option value="A">A: 1 - 30</option>
+                            <option value="B">B: 31 - 60</option>
+                            <option value="C">C: 61 - 90</option>
+                        </select>
+                        <button type="submit">Buscar</button>
+                    </form>
+                </section>
+        
+                <section id="resultados">
+                    <h2>Resultados de la Búsqueda</h2>
+                    <div class="libro">
+                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
+                        <div class="detalles">
+                            <p>ISBN: </p>
+                            <p>Título: </p>
+                            <p>Autor: </p>
+                            <p>Tema: </p>
+                            <p>Ubicación física: </p>
+                            <p>Fecha edición: </p>
+                            <p>Número de páginas: </p>
+                            <p>Cantidad de ejemplares: </p>
+                            <p>Cantidad de ejemplares disponibles: </p>
+                            <p>Resumen: </p>
+                            <p>Tipo de medio del ejemplar: </p>
+                        </div>
+                    </div>
+                    
+                    <div class="libro">
+                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
+                        <div class="detalles">
+                            <p>ISBN: </p>
+                            <p>Título: </p>
+                            <p>Autor: </p>
+                            <p>Tema: </p>
+                            <p>Ubicación física: </p>
+                            <p>Fecha edición: </p>
+                            <p>Número de páginas: </p>
+                            <p>Cantidad de ejemplares: </p>
+                            <p>Cantidad de ejemplares disponibles: </p>
+                            <p>Resumen: </p>
+                            <p>Tipo de medio del ejemplar: </p>
+                        </div>
+                    </div>
+
+                    <div class="libro">
+                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
+                        <div class="detalles">
+                            <p>ISBN: </p>
+                            <p>Título: </p>
+                            <p>Autor: </p>
+                            <p>Tema: </p>
+                            <p>Ubicación física: </p>
+                            <p>Fecha edición: </p>
+                            <p>Número de páginas: </p>
+                            <p>Cantidad de ejemplares: </p>
+                            <p>Cantidad de ejemplares disponibles: </p>
+                            <p>Resumen: </p>
+                            <p>Tipo de medio del ejemplar: </p>
+                        </div>
+                    </div>
+
+                    <div class="libro">
+                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
+                        <div class="detalles">
+                            <p>ISBN: </p>
+                            <p>Título: </p>
+                            <p>Autor: </p>
+                            <p>Tema: </p>
+                            <p>Ubicación física: </p>
+                            <p>Fecha edición: </p>
+                            <p>Número de páginas: </p>
+                            <p>Cantidad de ejemplares: </p>
+                            <p>Cantidad de ejemplares disponibles: </p>
+                            <p>Resumen: </p>
+                            <p>Tipo de medio del ejemplar: </p>
+                        </div>
+                    </div>
+
+                    <div class="libro">
+                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
+                        <div class="detalles">
+                            <p>ISBN: </p>
+                            <p>Título: </p>
+                            <p>Autor: </p>
+                            <p>Tema: </p>
+                            <p>Ubicación física: </p>
+                            <p>Fecha edición: </p>
+                            <p>Número de páginas: </p>
+                            <p>Cantidad de ejemplares: </p>
+                            <p>Cantidad de ejemplares disponibles: </p>
+                            <p>Resumen: </p>
+                            <p>Tipo de medio del ejemplar: </p>
+                        </div>
+                    </div>
+
+                    <div class="libro">
+                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
+                        <div class="detalles">
+                            <p>ISBN: </p>
+                            <p>Título: </p>
+                            <p>Autor: </p>
+                            <p>Tema: </p>
+                            <p>Ubicación física: </p>
+                            <p>Fecha edición: </p>
+                            <p>Número de páginas: </p>
+                            <p>Cantidad de ejemplares: </p>
+                            <p>Cantidad de ejemplares disponibles: </p>
+                            <p>Resumen: </p>
+                            <p>Tipo de medio del ejemplar: </p>
+                        </div>
+                    </div>
+
+                    <div class="libro">
+                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
+                        <div class="detalles">
+                            <p>ISBN: </p>
+                            <p>Título: </p>
+                            <p>Autor: </p>
+                            <p>Tema: </p>
+                            <p>Ubicación física: </p>
+                            <p>Fecha edición: </p>
+                            <p>Número de páginas: </p>
+                            <p>Cantidad de ejemplares: </p>
+                            <p>Cantidad de ejemplares disponibles: </p>
+                            <p>Resumen: </p>
+                            <p>Tipo de medio del ejemplar: </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
     </body>
 </html>
