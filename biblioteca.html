@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Juan Moreno - Biblioteca</title>
+        <link rel="stylesheet" href="estiloscss.css">
     </head>
 
     <body>
@@ -11,10 +12,11 @@
                 </h1>
             </header>
             <main>
-                <section id="search-section">
+                <section id="buscar">
                     <h2>Buscar Libros</h2>
-                    <form id="search-form">
-                        <input id="title-search" class="areatxt" type="search" placeholder="Título"> 
+                    <form id="buscar-form">
+                        <div>
+                            <input id="title-search" class="areatxt" type="search" placeholder="Título"> 
                         <button type="submit">Buscar</button>
         
                         <input id="author-search" class="areatxt" type="search" placeholder="Autor"> 
@@ -31,8 +33,10 @@
                             <option value="Infantil">Infantil y juvenil</option>
                         </select>
                         <button type="submit">Buscar</button>
-        
-                        <label for="ubi">Ubicación Física:</label>
+                        </div>
+                        
+                        <div>
+                            <label for="ubi">Ubicación Física:</label>
                         <select name="ubicacion" id="ubi">
                             <option value="seleccion">--Seleccione ubicación--</option>
                             <option value="A">A: 1 - 30</option>
@@ -40,129 +44,136 @@
                             <option value="C">C: 61 - 90</option>
                         </select>
                         <button type="submit">Buscar</button>
+                        </div>
+                        
                     </form>
                 </section>
         
                 <section id="resultados">
                     <h2>Resultados de la Búsqueda</h2>
-                    <div class="libro">
-                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
-                        <div class="detalles">
-                            <p>ISBN: </p>
-                            <p>Título: </p>
-                            <p>Autor: </p>
-                            <p>Tema: </p>
-                            <p>Ubicación física: </p>
-                            <p>Fecha edición: </p>
-                            <p>Número de páginas: </p>
-                            <p>Cantidad de ejemplares: </p>
-                            <p>Cantidad de ejemplares disponibles: </p>
-                            <p>Resumen: </p>
-                            <p>Tipo de medio del ejemplar: </p>
+                    <div class="libro-contenedor">
+
+                        <div class="libro">
+                            <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://storage.googleapis.com/catalogo-libros/extralarge/d068f7f7-889e-c2c2-0a7c-6626d84b3f08_imagen.JPG">
+                            <div class="detalles">
+                                <p><strong>ISBN:</strong> 9786287589124</p>
+                                <p><strong>Título:</strong> LA VERDADERA HISTORIA DE COLOMBIA</p>
+                                <p><strong>Autor:</strong> HERNANDO GOMEZ BUENDIA</p>
+                                <p><strong>Tema:</strong> Conocimiento y ciencia</p>
+                                <p><strong>Ubicación física:</strong> A: 1 - 30</p>
+                                <p><strong>Fecha edición:</strong> 10/10/2020</p>
+                                <p><strong>Número de páginas:</strong> 819</p>
+                                <p><strong>Cantidad de ejemplares:</strong> 4</p>
+                                <p><strong>Cantidad de ejemplares disponibles:</strong> 4</p>
+                                <p><strong>Resumen:</strong> Este libro es una crónica, una radiografía y una guía para entender al país.  La verdadera historia de Colombia es un libro apasionante y retador, resultado de toda una vida de investigación y trabajo, que recoge los hechos más importantes de la historia de Colombia para entender con perspectiva los grandes dilemas de nuestro presente. Una revisión y ampliación rigurosa de lo presentado en Entre la independencia y la pandemia.</p>
+                                <p><strong>Tipo de medio del ejemplar:</strong> Fisico</p>
+                            </div>
                         </div>
+
+                        <div class="libro">
+                            <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://storage.googleapis.com/catalogo-libros/extralarge/1e2f3e09-7a6d-1255-cad4-6622946ef05d_imagen.webp">
+                            <div class="detalles">
+                                <p><strong>ISBN:</strong> 9788433922137</p>
+                                <p><strong>Título:</strong> TECNOLOGIA Y BARBARIE</p>
+                                <p><strong>Autor:</strong> MICHEL NIEVA</p>
+                                <p><strong>Tema:</strong> Bienestar y salud</p>
+                                <p><strong>Ubicación física:</strong> C: 61 - 90</p>
+                                <p><strong>Fecha edición:</strong> 20/12/2001</p>
+                                <p><strong>Número de páginas:</strong> 173</p>
+                                <p><strong>Cantidad de ejemplares:</strong> 7</p>
+                                <p><strong>Cantidad de ejemplares disponibles:</strong> 7</p>
+                                <p><strong>Resumen:</strong> La tecnología ha sido siempre documento de civilización, pero también de barbarie. Este libro expone algunos casos, como el del zoológico fundado en Hamburgo por Carl Hagenbeck, que en 1875 exhibió indígenas porque resultaban más económicos de importar que los animales; o el de Eduardo Kac, que en 2001 utilizó la ingeniería genética como lenguaje plástico en su obra Génesis, al encriptar una frase traducida a morse en pares de ADN e inocularla en bacterias. Según Michel Nieva, la historia de la literatura argentina se funda sobre esa fricción: la tecnología como cruce entre civilización y barbarie.</p>
+                                <p><strong>Tipo de medio del ejemplar:</strong> Fisico</p>
+                            </div>
+                        </div>
+    
+                        <div class="libro">
+                            <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://storage.googleapis.com/catalogo-libros/extralarge/79c549a9-aae8-867d-7955-6633c8b3ec28_imagen.jpg">
+                            <div class="detalles">
+                                <p><strong>ISBN:</strong> 9786289524093</p>
+                                <p><strong>Título:</strong> HISTORIANDO MI CANTAR</p>
+                                <p><strong>Autor:</strong> JORGE VELOSA RUIZ</p>
+                                <p><strong>Tema:</strong> Literatura</p>
+                                <p><strong>Ubicación física:</strong> B: 31 - 60</p>
+                                <p><strong>Fecha edición:</strong> 25/06/2007</p>
+                                <p><strong>Número de páginas:</strong> 428</p>
+                                <p><strong>Cantidad de ejemplares:</strong> 12</p>
+                                <p><strong>Cantidad de ejemplares disponibles:</strong> 12</p>
+                                <p><strong>Resumen:</strong> ¿A dónde fue a parar la famosa cucharita? ¿Dónde se conocieron Julia y el sueño del camión? ¿Cómo surgieron Los Carrangueros de Ráquira? ¿Cuál es la historia detrás de canciones tan queridas como El rey pobre, Canto a mi vereda, La china que yo tenía, Las diabluras, La gallina mellicera y Buenos días, campesino? Alternando con versos, coplas del saber popular y apuntes de humor, el maestro Jorge Velosa nos comparte en este libro las anécdotas y vivencias que, a lo largo de su carrera musical —entre giras, conciertos y ensayos con sus distintas agrupaciones—, dieron origen a más de 140 canciones y poemas de su repertorio, cuyas letras también se incluyen aquí, a manera de cancionero. Historiando mi cantar da cuenta de los orígenes y la historia de la carranga y constituye, a su vez, una bitácora autobiográfica de su pregonero principal.</p>
+                                <p><strong>Tipo de medio del ejemplar:</strong> Fisico</p>
+                            </div>
+                        </div>
+    
+                        <div class="libro">
+                            <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://storage.googleapis.com/catalogo-libros/extralarge/edf0ad61-de61-80d6-d846-660dc58d7564_imagen.JPG">
+                            <div class="detalles">
+                                <p><strong>ISBN:</strong> 9786287715295</p>
+                                <p><strong>Título:</strong> LAS CADENAS DEL REY</p>
+                                <p><strong>Autor:</strong> KARINE BERNAL LOBO</p>
+                                <p><strong>Tema:</strong> Literatura</p>
+                                <p><strong>Ubicación física:</strong> B: 31 - 60</p>
+                                <p><strong>Fecha edición:</strong> 09/08/2011/p>
+                                <p><strong>Número de páginas:</strong> 542</p>
+                                <p><strong>Cantidad de ejemplares:</strong> 15</p>
+                                <p><strong>Cantidad de ejemplares disponibles:</strong> 15</p>
+                                <p><strong>Resumen:</strong> Después de enfrentarse a quienes buscan silenciar su voz y a las intrigas de Mishnock, Emily termina como prisionera de quien creía que era el amor de su vida. Ahora, lejos de su familia y atrapada en un territorio desconocido, Emily se ha convertido en la clave de los acuerdos de paz entre los dos reinos enemigos y su corazón empieza a debatirse entre dos mundos irreconciliables. En medio de la opulencia de la corte y las sombras de la traición, y mientras el destino de los reinos pende de un hilo, Emily se arriesgará a vivir un romance que la obligará a desafiar sus convicciones. ¿Será posible para ella entregarse a la pasión con el hombre al que le han enseñado a odiar sin poner en riesgo su libertad y sus ideales? </p>
+                                <p><strong>Tipo de medio del ejemplar:</strong> Fisico</p>
+                            </div>
+                        </div>
+    
+                        <div class="libro">
+                            <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://storage.googleapis.com/catalogo-libros/extralarge/920d1e55-77ed-8620-28ac-6615b14c0897_imagen.jpeg">
+                            <div class="detalles">
+                                <p><strong>ISBN:</strong> 9788419599339</p>
+                                <p><strong>Título:</strong> MITOS Y LEYENDAS ANTIGUO EGIPTO</p>
+                                <p><strong>Autor:</strong> EVA MARIA MARCOS</p>
+                                <p><strong>Tema:</strong> Literatura</p>
+                                <p><strong>Ubicación física:</strong> C: 61 - 90</p>
+                                <p><strong>Fecha edición:</strong> 10/11/2008</p>
+                                <p><strong>Número de páginas:</strong> 141</p>
+                                <p><strong>Cantidad de ejemplares:</strong> 9</p>
+                                <p><strong>Cantidad de ejemplares disponibles:</strong> 4</p>
+                                <p><strong>Resumen:</strong> Descubre, junto al Nilo, los mitos y leyendas de la milenaria cultura de los faraones: navega en la barca sagrada de Re, el dios supremo; atraviesa el inframundo de Osiris y media en la disputa entre Isis, Set y Horus, gracias a esta completa selección de relatos ilustrados.</p>
+                                <p><strong>Tipo de medio del ejemplar:</strong> Virtual</p>
+                            </div>
+                        </div>
+    
+                        <div class="libro">
+                            <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://storage.googleapis.com/catalogo-libros/extralarge/20231b12-4012-74ee-8c4a-6615aa099159_imagen.jpeg">
+                            <div class="detalles">
+                                <p><strong>ISBN:</strong> 9788419599353</p>
+                                <p><strong>Título:</strong> MITOS Y LEYENDAS DE LA ANTIGUA GRECIA</p>
+                                <p><strong>Autor:</strong> JOAQUIN ARIAS</p>
+                                <p><strong>Tema:</strong> Literatura</p>
+                                <p><strong>Ubicación física:</strong> C: 61 - 90</p>
+                                <p><strong>Fecha edición:</strong> 15/10/2008</p>
+                                <p><strong>Número de páginas:</strong> 141</p>
+                                <p><strong>Cantidad de ejemplares:</strong> 8</p>
+                                <p><strong>Cantidad de ejemplares disponibles:</strong> 4</p>
+                                <p><strong>Resumen:</strong> Descubre los mitos y leyendas de la Grecia clásica que han sentado las bases de la identidad de la cultura occidental: el poder de Zeus, la fuerza de Heracles, el drama de Antígona, la voracidad del Minotauro o la audacia de Prometeo, gracias a esta completa selección de relatos ilustrados.</p>
+                                <p><strong>Tipo de medio del ejemplar:</strong> Virtual</p>
+                            </div>
+                        </div>
+    
+                        <div class="libro">
+                            <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://storage.googleapis.com/catalogo-libros/extralarge/d068f7f7-889e-c2c2-0a7c-6626d84b3f08_imagen.JPG">
+                            <div class="detalles">
+                                <p><strong>ISBN:</strong> 9786287589124</p>
+                                <p><strong>Título:</strong>LA VERDADERA HISTORIA DE COLOMBIA</p>
+                                <p><strong>Autor:</strong> HERNANDO GOMEZ BUENDIA</p>
+                                <p><strong>Tema:</strong> Literatura</p>
+                                <p><strong>Ubicación física:</strong>A: 1 - 30</p>
+                                <p><strong>Fecha edición:</strong>23/06/2022</p>
+                                <p><strong>Número de páginas:</strong> 819</p>
+                                <p><strong>Cantidad de ejemplares:</strong> 20</p>
+                                <p><strong>Cantidad de ejemplares disponibles:</strong> 20</p>
+                                <p><strong>Resumen:</strong> Este libro es una crónica, una radiografía y una guía para entender al país.  La verdadera historia de Colombia es un libro apasionante y retador, resultado de toda una vida de investigación y trabajo, que recoge los hechos más importantes de la historia de Colombia para entender con perspectiva los grandes dilemas de nuestro presente. Una revisión y ampliación rigurosa de lo presentado en Entre la independencia y la pandemia.</p>
+                                <p><strong>Tipo de medio del ejemplar:</strong> Fisico</p>
+                            </div>
+                        </div>
+
                     </div>
                     
-                    <div class="libro">
-                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
-                        <div class="detalles">
-                            <p>ISBN: </p>
-                            <p>Título: </p>
-                            <p>Autor: </p>
-                            <p>Tema: </p>
-                            <p>Ubicación física: </p>
-                            <p>Fecha edición: </p>
-                            <p>Número de páginas: </p>
-                            <p>Cantidad de ejemplares: </p>
-                            <p>Cantidad de ejemplares disponibles: </p>
-                            <p>Resumen: </p>
-                            <p>Tipo de medio del ejemplar: </p>
-                        </div>
-                    </div>
-
-                    <div class="libro">
-                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
-                        <div class="detalles">
-                            <p>ISBN: </p>
-                            <p>Título: </p>
-                            <p>Autor: </p>
-                            <p>Tema: </p>
-                            <p>Ubicación física: </p>
-                            <p>Fecha edición: </p>
-                            <p>Número de páginas: </p>
-                            <p>Cantidad de ejemplares: </p>
-                            <p>Cantidad de ejemplares disponibles: </p>
-                            <p>Resumen: </p>
-                            <p>Tipo de medio del ejemplar: </p>
-                        </div>
-                    </div>
-
-                    <div class="libro">
-                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
-                        <div class="detalles">
-                            <p>ISBN: </p>
-                            <p>Título: </p>
-                            <p>Autor: </p>
-                            <p>Tema: </p>
-                            <p>Ubicación física: </p>
-                            <p>Fecha edición: </p>
-                            <p>Número de páginas: </p>
-                            <p>Cantidad de ejemplares: </p>
-                            <p>Cantidad de ejemplares disponibles: </p>
-                            <p>Resumen: </p>
-                            <p>Tipo de medio del ejemplar: </p>
-                        </div>
-                    </div>
-
-                    <div class="libro">
-                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
-                        <div class="detalles">
-                            <p>ISBN: </p>
-                            <p>Título: </p>
-                            <p>Autor: </p>
-                            <p>Tema: </p>
-                            <p>Ubicación física: </p>
-                            <p>Fecha edición: </p>
-                            <p>Número de páginas: </p>
-                            <p>Cantidad de ejemplares: </p>
-                            <p>Cantidad de ejemplares disponibles: </p>
-                            <p>Resumen: </p>
-                            <p>Tipo de medio del ejemplar: </p>
-                        </div>
-                    </div>
-
-                    <div class="libro">
-                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
-                        <div class="detalles">
-                            <p>ISBN: </p>
-                            <p>Título: </p>
-                            <p>Autor: </p>
-                            <p>Tema: </p>
-                            <p>Ubicación física: </p>
-                            <p>Fecha edición: </p>
-                            <p>Número de páginas: </p>
-                            <p>Cantidad de ejemplares: </p>
-                            <p>Cantidad de ejemplares disponibles: </p>
-                            <p>Resumen: </p>
-                            <p>Tipo de medio del ejemplar: </p>
-                        </div>
-                    </div>
-
-                    <div class="libro">
-                        <img width="270" height="180" alt="Portada del libro" title="Portada del libro" src="https://via.placeholder.com/270x180">
-                        <div class="detalles">
-                            <p>ISBN: </p>
-                            <p>Título: </p>
-                            <p>Autor: </p>
-                            <p>Tema: </p>
-                            <p>Ubicación física: </p>
-                            <p>Fecha edición: </p>
-                            <p>Número de páginas: </p>
-                            <p>Cantidad de ejemplares: </p>
-                            <p>Cantidad de ejemplares disponibles: </p>
-                            <p>Resumen: </p>
-                            <p>Tipo de medio del ejemplar: </p>
-                        </div>
-                    </div>
                 </section>
             </main>
     </body>
