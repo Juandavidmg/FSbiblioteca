@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Juan Moreno - Biblioteca</title>
+        <script type="text/javascript" src="javaS.js"></script>
         <link rel="stylesheet" href="estiloscss.css">
     </head>
 
@@ -17,7 +18,7 @@
                     <form id="buscar-form">
                         <div>
                             <input id="title-search" class="areatxt" type="search" placeholder="Título"> 
-                        <button type="submit">Buscar</button>
+                        <button type="button" onclick="ejVar()">Buscar</button>
         
                         <input id="author-search" class="areatxt" type="search" placeholder="Autor"> 
                         <button type="submit">Buscar</button>
@@ -171,10 +172,32 @@
                                 <p><strong>Tipo de medio del ejemplar:</strong> Fisico</p>
                             </div>
                         </div>
-
                     </div>
-                    
                 </section>
+                <section id="crear">
+                <h2>Agregar Libro</h2>
+                <form id="crear-form">
+                    <input id="isbn" class="areatxt" type="text" placeholder="ISBN">
+                    <input id="title" class="areatxt" type="text" placeholder="Título">
+                    <input id="author" class="areatxt" type="text" placeholder="Autor">
+                    <input id="tema" class="areatxt" type="text" placeholder="Tema">
+                    <input id="ubicacion" class="areatxt" type="text" placeholder="Ubicación Física">
+                    <input id="fecha-edicion" class="areatxt" type="date" placeholder="Fecha Edición">
+                    <input id="num-paginas" class="areatxt" type="number" placeholder="Número de Páginas">
+                    <input id="cant-ejemplares" class="areatxt" type="number" placeholder="Cantidad de Ejemplares">
+                    <input id="cant-disponibles" class="areatxt" type="number" placeholder="Cantidad de Ejemplares Disponibles">
+                    <textarea id="resumen" class="areatxt" placeholder="Resumen"></textarea>
+                    <input id="tipo-medio" class="areatxt" type="text" placeholder="Tipo de Medio del Ejemplar">
+                    <button type="button" onclick="crearLibro()">Agregar</button>
+                </form>
+            </section>
+
+            <section id="resultados">
+                <h2>Resultados de la Búsqueda</h2>
+                <div class="libro-contenedor" id="libro-contenedor">
+                    <!-- Resultados de búsqueda dinámicos aquí -->
+                </div>
+            </section>
             </main>
     </body>
 </html>
