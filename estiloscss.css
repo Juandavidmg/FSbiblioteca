@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,90 +31,53 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-#buscar-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Estilos adicionales de Bootstrap */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.areatxt {
-    flex: 1;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
+.btn-custom {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
+.btn-custom:hover {
     background-color: #555;
 }
 
-label {
-    margin-top: 0.5rem;
-    color: #333;
+/* Ajustes adicionales */
+.form-control {
+    margin-bottom: 1rem;
 }
 
-select {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-group {
+    margin-bottom: 1rem;
 }
 
 .libro-contenedor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .libro {
     background-color: #fff;
     padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1 1 calc(33% - 1rem);
+    box-sizing: border-box;
 }
 
 .libro img {
     max-width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
-.libro img:hover {
-    transform: scale(1.05);
-}
-
-.detalles {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-}
-
-.libro:hover .detalles {
-    display: block;
-}
-
-.detalles p {
+.libro .detalles p {
     margin: 0.5rem 0;
 }
